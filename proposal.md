@@ -19,7 +19,7 @@
 
 #### Resolución de anomalías
 
-En la provincia de Santa Fe están ocurriendo Anomalías producidas por Fantasmas. Para solucionarlo, se crea un sistema capaz de asignar Avistamientos de Anomalías a Cazadores. Estos Avistamientos son cargados al sistema por un Operador, que es contactado por teléfono por la gente. El Operador genera un Pedido de Resolución, y detalla la Anomalía y el lugar del avistamiento. Luego, el Cazador acepta un Pedido de Resolución, según su zona y localidad y, una vez resuelto, detalla su información. El Cazador puede no resolver la Anomalía.
+En el país, están ocurriendo Anomalías producidas por Fantasmas. Para solucionarlo, se crea un sistema capaz de asignar Avistamientos de Anomalías a Cazadores. Estos Avistamientos son cargados al sistema por un Denunciante, que se registra y genera un Pedido de Resolución, donde detalla la/s Anomalía/s y el lugar del avistamiento. Luego, el Cazador acepta un Pedido de Resolución, según su localidad y su zona y, una vez resuelto, detalla su información.
 
 ### Modelo
 
@@ -35,11 +35,17 @@ Regularidad:
 |Req|Detalle|
 |:-|:-|
 |CRUD simple|1. CRUD Tipo de Anomalía<br>2. CRUD Localidad<br>3. CRUD Denunciante|
-|CRUD dependiente|1. CRUD Usuario {depende de} CRUD Zona<br>2. CRUD Zona {depende de} CRUD Localidad|
-|Listado<br>+<br>detalle| 1. Listado de Pedidos de Resolución filtrado por su dificultad, muestra código del pedido de resolución y dificultad de la anomalía => detalle CRUD Pedido de Resolución<br> 2. Listado de Inspecciones filtrado por su resultado, muestra código del pedido de resolución y resultado de la Inspección => detalle CRUD Inspección|
+|CRUD dependiente|1. CRUD Zona {depende de} CRUD Localidad<br>2. CRUD Usuario {depende de} CRUD Zona|
+|Listado<br>+<br>detalle| 1. Listado de Pedidos de Resolución filtrado por su dificultad y/o localidad, muestra código del pedido de resolución y dificultad de la anomalía => detalle CRUD Pedido de Resolución<br> 2. Listado de Inspecciones filtrado por su resultado, muestra código del pedido de resolución y resultado de la Inspección => detalle CRUD Inspección|
 |CUU/Epic|1. Generar Pedido de Resolución<br>2. Registrar Inspección|
 
 Adicionales para Aprobación:
 |Req|Detalle|
 |:-|:-|
 |CUU/Epic|1. Generar Pedido de Agregación de Anomalía|
+
+### Alcance Adicional Voluntario
+|Req|Detalle|
+|:-|:-|
+|CUU/Epic|1. Tomar Pedido de Resolución<br>2. Aceptar/Rechazar Pedido de Agregación de Anomalía<br>3. Aprobar cuenta de nuevo cazador|
+|Otros|1. Subida de archivos como evidencia de un pedido de agregación de anomalía|
