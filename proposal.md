@@ -36,7 +36,7 @@ Regularidad:
 |:-|:-|
 |CRUD simple|1. CRUD Tipo de Anomalía<br>2. CRUD Localidad<br>3. CRUD Denunciante|
 |CRUD dependiente|1. CRUD Zona {depende de} CRUD Localidad<br>2. CRUD Usuario {depende de} CRUD Zona|
-|Listado<br>+<br>detalle| 1. Listado de Pedidos de Resolución filtrado por su dificultad y/o localidad, muestra código del pedido de resolución y dificultad de la anomalía => detalle CRUD Pedido de Resolución<br> 2. Listado de Inspecciones filtrado por su resultado, muestra código del pedido de resolución y resultado de la Inspección => detalle CRUD Inspección|
+|Listado<br>+<br>detalle| 1. Listado de Pedidos de Resolución filtrado por su dificultad y/o localidad, muestra localidad, zona, dificultad y fecha del pedido => detalle CRUD Pedido de Resolución<br> 2. Listado de Inspecciones filtrado por su resultado, muestra código del pedido de resolución y resultado de la Inspección => detalle CRUD Inspección|
 |CUU/Epic|1. Generar Pedido de Resolución<br>2. Registrar Inspección|
 
 Adicionales para Aprobación:
@@ -47,5 +47,5 @@ Adicionales para Aprobación:
 ### Alcance Adicional Voluntario
 |Req|Detalle|
 |:-|:-|
-|CUU/Epic|1. Tomar Pedido de Resolución<br>2. Aceptar/Rechazar Pedido de Agregación de Anomalía<br>3. Aprobar cuenta de nuevo cazador|
+|CUU/Epic|1. Tomar Pedido de Resolución<br>2. Aceptar/Rechazar Pedido de Agregación de Anomalía<br>3. Aprobar cuenta de nuevo cazador<br>4. Finalizar Pedido de Resolución|
 |Otros|1. Subida de archivos como evidencia de un pedido de agregación de anomalía|
