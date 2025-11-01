@@ -36,7 +36,7 @@ Regularidad:
 |:-|:-|
 |CRUD simple|1. CRUD Tipo de Anomalía<br>2. CRUD Localidad<br>3. CRUD Denunciante|
 |CRUD dependiente|1. CRUD Zona {depende de} CRUD Localidad<br>2. CRUD Usuario {depende de} CRUD Zona|
-|Listado<br>+<br>detalle| 1. Listado de Pedidos de Resolución filtrado por su dificultad y/o localidad, muestra localidad, zona, dificultad y fecha del pedido => detalle CRUD Pedido de Resolución<br> 2. Listado de Pedidos de Agregación filtrado por su estado y/o dificultad, muestra descripción, dificultad y estado del pedido => detalle CRUD Pedidos de Agregación|
+|Listado<br>+<br>detalle| 1. Listado de Pedidos de Resolución filtrado por su dificultad y/o localidad, muestra localidad, zona, dificultad y fecha del pedido => detalle CRUD Pedido de Resolución<br> 2. Listado de Pedidos de Agregación filtrado por su estado y/o dificultad, muestra descripción, dificultad y estado del pedido => detalle CRUD Pedido de Agregación|
 |CUU/Epic|1. Generar Pedido de Resolución<br>2. Generar Pedido de Agregación de Anomalía|
 
 Adicionales para Aprobación:
