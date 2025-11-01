@@ -36,13 +36,13 @@ Regularidad:
 |:-|:-|
 |CRUD simple|1. CRUD Tipo de Anomalía<br>2. CRUD Localidad<br>3. CRUD Denunciante|
 |CRUD dependiente|1. CRUD Zona {depende de} CRUD Localidad<br>2. CRUD Usuario {depende de} CRUD Zona|
-|Listado<br>+<br>detalle| 1. Listado de Pedidos de Resolución filtrado por su dificultad y/o localidad, muestra localidad, zona, dificultad y fecha del pedido => detalle CRUD Pedido de Resolución<br> 2. Listado de Inspecciones filtrado por su resultado, muestra código del pedido de resolución y resultado de la Inspección => detalle CRUD Inspección|
-|CUU/Epic|1. Generar Pedido de Resolución<br>2. Registrar Inspección|
+|Listado<br>+<br>detalle| 1. Listado de Pedidos de Resolución filtrado por su dificultad y/o localidad, muestra localidad, zona, dificultad y fecha del pedido => detalle CRUD Pedido de Resolución<br> 2. Listado de Pedidos de Agregación filtrado por su estado y/o dificultad, muestra descripción, dificultad y estado del pedido => detalle CRUD Pedidos de Agregación|
+|CUU/Epic|1. Generar Pedido de Resolución<br>2. Generar Pedido de Agregación de Anomalía|
 
 Adicionales para Aprobación:
 |Req|Detalle|
 |:-|:-|
-|CUU/Epic|1. Generar Pedido de Agregación de Anomalía|
+|CUU/Epic|1. Registrar Inspección|
 
 ### Alcance Adicional Voluntario
 |Req|Detalle|
